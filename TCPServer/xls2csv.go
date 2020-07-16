@@ -8,6 +8,10 @@ import (
 	"github.com/360EntSecGroup-Skylar/excelize"
 )
 
+func main() {
+	excel2Csv("covid_final_data.xlsx")
+}
+
 func excel2Csv(fileName string) {
 	file, err := excelize.OpenFile("covid_final_data.xlsx")
 
